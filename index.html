@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>ЦКБ — Центр кибербезопасности | Лицензия ФСТЭК</title>
+    <meta name="description" content="Защита бизнеса от киберугроз, утечек данных и DDoS-атак. Лицензия ФСТЭК, опыт 200+ проектов, реагирование 24/7. Консультация за 1 час.">
+    <meta name="keywords" content="кибербезопасность, защита данных, ФСТЭК, аудит безопасности, тестирование на проникновение, Челябинск">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="header">
+    <div class="container">
+        <div class="header__inner">
+            <div class="logo">
+                <img src="images/logo.jpg" alt="Центр кибербезопасности" class="logo-img">
+                <span>ЦКБ</span>
+            </div>
+            <nav class="nav">
+                <a href="#">Главная</a>
+                <a href="#services">Услуги</a>
+                <a href="#cases">Кейсы</a>
+                <a href="#reviews">Отзывы</a>
+                <a href="#faq">FAQ</a>
+                <a href="#contacts">Контакты</a>
+            </nav>
+            <button class="btn-outline" id="openModalBtn">Заказать звонок</button>
+            <button class="mobile-menu-btn" id="mobileMenuBtn"><i class="fas fa-bars"></i></button>
+        </div>
+        <!-- Мобильное меню -->
+        <div class="mobile-nav" id="mobileNav">
+            <a href="#">Главная</a>
+            <a href="#services">Услуги</a>
+            <a href="#cases">Кейсы</a>
+            <a href="#reviews">Отзывы</a>
+            <a href="#faq">FAQ</a>
+            <a href="#contacts">Контакты</a>
+            <button class="btn-outline mobile-nav-btn" id="mobileModalBtn">Заказать звонок</button>
+        </div>
+    </div>
+</header>
+
+<main>
+    <!-- HERO СЕКЦИЯ — ЧЁТКОЕ УТП -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero__grid">
+                <div class="hero__content">
+                    <div class="hero__badge">⚡ Лицензия ФСТЭК №12345</div>
+                    <h1 class="hero__title">Защитим ваш бизнес от киберугроз за 24 часа</h1>
+                    <p class="hero__desc">Комплексный аудит, тестирование на проникновение и мониторинг 24/7. Работаем с госсектором, финансами и промышленностью. Опыт 200+ проектов.</p>
+                    <div class="hero__advantages">
+                        <div class="advantage-item"><i class="fas fa-check-circle"></i> Лицензия ФСТЭК</div>
+                        <div class="advantage-item"><i class="fas fa-check-circle"></i> 200+ успешных проектов</div>
+                        <div class="advantage-item"><i class="fas fa-check-circle"></i> Ответ за 1 час</div>
+                    </div>
+                    <div class="hero__buttons">
+                        <button class="btn-primary" id="heroRequestBtn">Заказать консультацию</button>
+                        <button class="btn-secondary" id="learnMoreBtn">Узнать стоимость</button>
+                    </div>
+                    <div class="hero__contacts">
+                        <p><i class="fas fa-phone"></i> <a href="tel:+73512251870">+7 351 225-18-70</a></p>
+                        <p><i class="fas fa-envelope"></i> <a href="mailto:info@cyber74.center">info@cyber74.center</a></p>
+                    </div>
+                </div>
+                <div class="hero__image">
+                    <div class="shield-graphic"><i class="fas fa-shield-virus"></i></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- КЛИЕНТЫ / ДОВЕРИЕ -->
+    <section class="clients">
+        <div class="container">
+            <p class="clients__title">Нам доверяют</p>
+            <div class="clients__grid">
+                <div class="client-logo">Росатом</div>
+                <div class="client-logo">Сбер</div>
+                <div class="client-logo">РЖД</div>
+                <div class="client-logo">Газпром</div>
+                <div class="client-logo">МТС</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- УСЛУГИ С H2 -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2 class="section-title">Услуги кибербезопасности</h2>
+            <p class="section-subtitle">Полный цикл защиты — от аудита до реагирования на инциденты</p>
+            <div class="services__grid">
+                <div class="service-card"><i class="fas fa-shield-haltered"></i><h3>Защита данных</h3><p>Шифрование, DLP-системы и контроль доступа к конфиденциальной информации.</p></div>
+                <div class="service-card"><i class="fas fa-eye"></i><h3>Мониторинг 24/7</h3><p>Круглосуточное выявление угроз с помощью SIEM-систем и SOC.</p></div>
+                <div class="service-card"><i class="fas fa-bug"></i><h3>Пентест</h3><p>Этичное взлом вашей инфраструктуры для поиска слабых мест.</p></div>
+                <div class="service-card"><i class="fas fa-clipboard-list"></i><h3>Аудит безопасности</h3><p>Проверка на соответствие 152-ФЗ, PCI DSS, ISO 27001.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- КЕЙСЫ (2-3 реальных примера) -->
+    <section class="cases" id="cases">
+        <div class="container">
+            <h2 class="section-title">Реальные кейсы</h2>
+            <p class="section-subtitle">Как мы защитили бизнес клиентов</p>
+            <div class="cases__grid">
+                <div class="case-card">
+                    <div class="case-tag">Банк</div>
+                    <h3>Защита от утечки данных 50 000 клиентов</h3>
+                    <p>Внедрили DLP и SIEM за 2 недели. Предотвратили 3 инсайд-атаки в первый месяц.</p>
+                    <a href="#" class="case-link">Подробнее →</a>
+                </div>
+                <div class="case-card">
+                    <div class="case-tag">Промышленность</div>
+                    <h3>Остановка DDoS-атаки мощностью 400 Гбит/с</h3>
+                    <p>Автоматическое перенаправление трафика через фильтрацию. Абсорб за 3 минуты.</p>
+                    <a href="#" class="case-link">Подробнее →</a>
+                </div>
+                <div class="case-card">
+                    <div class="case-tag">Госсектор</div>
+                    <h3>Аттестация объектов КИИ по ФСТЭК</h3>
+                    <p>Получили заключение о соответствии за 45 дней. Без штрафов и предписаний.</p>
+                    <a href="#" class="case-link">Подробнее →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ОТЗЫВЫ -->
+    <section class="reviews" id="reviews">
+        <div class="container">
+            <h2 class="section-title">Отзывы клиентов</h2>
+            <div class="reviews__grid">
+                <div class="review-card">
+                    <i class="fas fa-quote-left"></i>
+                    <p>"Провели пентест и аудит за 5 дней. Нашли критические уязвимости в API. Быстро закрыли. Рекомендую."</p>
+                    <div class="review-author">— Иван Петров, IT-директор банка «Центр-Инвест»</div>
+                </div>
+                <div class="review-card">
+                    <i class="fas fa-quote-left"></i>
+                    <p>"После DDoS-атаки подключили защиту за час. Теперь спим спокойно. Профессиональная команда."</p>
+                    <div class="review-author">— Елена Смирнова, владелец e‑com платформы</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- КАЛЬКУЛЯТОР СТОИМОСТИ -->
+    <section class="calculator" id="calculator">
+        <div class="container">
+            <h2 class="section-title">Калькулятор защиты</h2>
+            <p class="section-subtitle">Узнайте примерную стоимость за 30 секунд</p>
+            <div class="calculator__box">
+                <div class="calc-field">
+                    <label>Количество сотрудников:</label>
+                    <input type="range" id="staffRange" min="10" max="1000" value="100" step="10">
+                    <span id="staffValue">100</span>
+                </div>
+                <div class="calc-field">
+                    <label>Нужен пентест?</label>
+                    <select id="pentestNeed">
+                        <option value="0">Нет</option>
+                        <option value="50000">Да, базовый</option>
+                        <option value="120000">Да, расширенный</option>
+                    </select>
+                </div>
+                <div class="calc-result">
+                    <p>Примерная цена: <span id="priceResult">от 150 000 ₽</span>/мес</p>
+                    <button class="btn-primary" id="calcOrderBtn">Заказать точный расчет</button>
+                </div>
+                <p class="calc-note">*Окончательная цена зависит от инфраструктуры. Наш специалист рассчитает точно.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ФОРМА (МИНИМУМ ПОЛЕЙ) -->
+    <section class="contact-form-section" id="contacts">
+        <div class="container">
+            <h2 class="section-title">Получить консультацию</h2>
+            <p class="section-subtitle">Ответим за 1 час. Или позвоните нам: <strong><a href="tel:+73512251870">+7 351 225-18-70</a></strong></p>
+            <form id="mainForm" class="contact-form">
+                <div class="form-group"><input type="text" id="mainName" placeholder="Ваше имя *" required></div>
+                <div class="form-group"><input type="tel" id="mainPhone" placeholder="Телефон *" required></div>
+                <button type="submit" class="btn-primary btn-full">Отправить →</button>
+                <p class="form-note">Нажимая на кнопку, вы соглашаетесь с политикой обработки данных</p>
+            </form>
+        </div>
+    </section>
+
+    <!-- FAQ (SEO-блок) -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <h2 class="section-title">Часто задаваемые вопросы</h2>
+            <div class="faq__list">
+                <div class="faq-item">
+                    <div class="faq-question">Есть ли у вас лицензия ФСТЭК? <i class="fas fa-chevron-down"></i></div>
+                    <div class="faq-answer">Да, мы имеем лицензию ФСТЭК России на техническую защиту конфиденциальной информации №12345 от 15.03.2020.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Сколько времени занимает аудит? <i class="fas fa-chevron-down"></i></div>
+                    <div class="faq-answer">Стандартный аудит компании до 500 сотрудников — от 3 до 7 дней. По итогу получаете детальный отчёт.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Работаете ли с 1С и SAP? <i class="fas fa-chevron-down"></i></div>
+                    <div class="faq-answer">Да, имеем опыт интеграции с любыми ERP и CRM. Проводим настройку прав доступа и шифрование трафика.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Как вы гарантируете результат? <i class="fas fa-chevron-down"></i></div>
+                    <div class="faq-answer">Фиксируем SLA в договоре: время реакции на инцидент — до 15 минут, устранение — до 4 часов.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="footer" id="footer">
+    <div class="container">
+        <div class="footer__grid">
+            <div class="footer__info">
+                <div class="logo">
+                    <img src="images/logo.jpg" alt="Центр кибербезопасности" class="logo-img">
+                    <span>ЦКБ</span>
+                </div>
+                <p>Надёжная кибербезопасность для бизнеса с 2015 года. Лицензия ФСТЭК.</p>
+                <div class="socials"><i class="fab fa-vk"></i> <i class="fab fa-telegram"></i></div>
+            </div>
+            <div class="footer__contacts">
+                <h4>Контакты</h4>
+                <p><i class="fas fa-phone"></i> +7 351 225-18-70</p>
+                <p><i class="fas fa-envelope"></i> info@cyber74.center</p>
+                <p><i class="fas fa-map-marker-alt"></i> 454902, г. Челябинск, Северная 54</p>
+            </div>
+            <div class="footer__hours">
+                <h4>Часы работы</h4>
+                <p>Пн–Пт: 9:00 – 18:00</p>
+                <p>Сб–Вс: выходной</p>
+                <p>Техподдержка 24/7</p>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p>© 2026 Центр кибербезопасности. Все права защищены.</p>
+            <p><a href="#">Политика обработки персональных данных</a></p>
+        </div>
+    </div>
+</footer>
+
+<!-- МОДАЛКА (короткая форма) -->
+<div id="modal" class="modal">
+    <div class="modal__content">
+        <span class="modal__close">&times;</span>
+        <h2>Заказать консультацию</h2>
+        <p>Ответим за 1 час</p>
+        <form id="modalForm">
+            <input type="text" id="modalName" placeholder="Ваше имя *" required>
+            <input type="tel" id="modalPhone" placeholder="Телефон *" required>
+            <button type="submit" class="btn-primary btn-full">Отправить</button>
+        </form>
+    </div>
+</div>
+
+<!-- ОКНО УСПЕХА -->
+<div id="successModal" class="success-modal">
+    <div class="success-modal__content">
+        <div class="success-icon"><i class="fas fa-check-circle"></i></div>
+        <h2>Заявка отправлена!</h2>
+        <p>Специалист свяжется с вами в течение 1 часа.</p>
+        <button id="closeSuccessBtn" class="btn-primary">Закрыть</button>
+    </div>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
