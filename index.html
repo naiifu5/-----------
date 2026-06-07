@@ -12,7 +12,7 @@
 </head>
 <body>
 
-<header class="header">
+<header class="header" id="header">
     <div class="container">
         <div class="header__inner">
             <div class="logo">
@@ -44,7 +44,22 @@
 </header>
 
 <main>
-    <!-- HERO СЕКЦИЯ — ЧЁТКОЕ УТП -->
+    <!-- БЕГУЩАЯ СТРОКА С ОТЗЫВАМИ -->
+    <div class="ticker">
+        <div class="ticker__wrapper">
+            <div class="ticker__item">⭐ "Лучшая защита от DDoS — профессионализм" — ГК «Астра»</div>
+            <div class="ticker__item">🔥 "После аудита исправили 15 критических уязвимостей" — МФК «Займер»</div>
+            <div class="ticker__item">🚀 "Реагирование на инцидент — 10 минут, спасибо!" — ООО «ТехноСервис»</div>
+            <div class="ticker__item">💎 "Лицензия ФСТЭК подтверждена, работаем 2 года" — АО «Челябинский завод»</div>
+            <!-- дублируем для бесконечности -->
+            <div class="ticker__item">⭐ "Лучшая защита от DDoS — профессионализм" — ГК «Астра»</div>
+            <div class="ticker__item">🔥 "После аудита исправили 15 критических уязвимостей" — МФК «Займер»</div>
+            <div class="ticker__item">🚀 "Реагирование на инцидент — 10 минут, спасибо!" — ООО «ТехноСервис»</div>
+            <div class="ticker__item">💎 "Лицензия ФСТЭК подтверждена, работаем 2 года" — АО «Челябинский завод»</div>
+        </div>
+    </div>
+
+    <!-- HERO СЕКЦИЯ — ЧЁТКОЕ УТП + АНИМИРОВАННАЯ ГРАФИКА -->
     <section class="hero">
         <div class="container">
             <div class="hero__grid">
@@ -67,7 +82,12 @@
                     </div>
                 </div>
                 <div class="hero__image">
-                    <div class="shield-graphic"><i class="fas fa-shield-virus"></i></div>
+                    <!-- Анимированная графика вместо статичной картинки -->
+                    <div class="animated-shield">
+                        <div class="shield-ring"></div>
+                        <i class="fas fa-shield-virus shield-icon"></i>
+                        <div class="shield-pulse"></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -129,7 +149,7 @@
         </div>
     </section>
 
-    <!-- ОТЗЫВЫ -->
+    <!-- ОТЗЫВЫ (стационарный блок) -->
     <section class="reviews" id="reviews">
         <div class="container">
             <h2 class="section-title">Отзывы клиентов</h2>
@@ -225,7 +245,7 @@
                     <span>ЦКБ</span>
                 </div>
                 <p>Надёжная кибербезопасность для бизнеса с 2015 года. Лицензия ФСТЭК.</p>
-                <div class="socials"><i class="fab fa-vk"></i> </div>
+                <div class="socials"><i class="fab fa-vk"></i> <i class="fab fa-telegram"></i></div>
             </div>
             <div class="footer__contacts">
                 <h4>Контакты</h4>

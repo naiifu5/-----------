@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function updatePrice() {
         let staff = parseInt(staffRange.value);
-        let basePrice = staff * 1500; // 1500 руб за сотрудника
+        let basePrice = staff * 1500;
         let pentest = parseInt(pentestNeed.value);
         let total = basePrice + pentest;
         priceResult.innerHTML = 'от ' + total.toLocaleString() + ' ₽';
@@ -61,12 +61,12 @@ document.addEventListener('DOMContentLoaded', function() {
         if (modal) modal.style.display = 'none';
     };
 
-    // ВАЛИДАЦИЯ ТЕЛЕФОНА (простая)
+    // ВАЛИДАЦИЯ ТЕЛЕФОНА
     function isValidPhone(phone) {
         return phone.trim().length >= 10;
     }
 
-    // ГЛАВНАЯ ФОРМА (только имя + телефон)
+    // ГЛАВНАЯ ФОРМА
     if (mainForm) {
         mainForm.onsubmit = function(e) {
             e.preventDefault();
@@ -93,7 +93,7 @@ document.addEventListener('DOMContentLoaded', function() {
         };
     }
 
-    // ПЛАВНЫЙ СКРОЛЛ "Узнать стоимость"
+    // ПЛАВНЫЙ СКРОЛЛ
     if (learnMoreBtn && servicesSection) {
         learnMoreBtn.onclick = function() {
             servicesSection.scrollIntoView({ behavior: 'smooth' });
@@ -118,4 +118,20 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         }
     });
-}); // <-- ВАЖНО: закрывающая скобка здесь!
+
+    // ===== СКРЫТИЕ ШАПКИ ПРИ СКРОЛЛЕ =====
+    const header = document.getElementById('header');
+    let lastScrollY = window.scrollY;
+    
+    if (header) {
+        window.addEventListener('scroll', function() {
+            const currentScrollY = window.scrollY;
+            if (currentScrollY > lastScrollY && currentScrollY > 100) {
+                header.classList.add('hide');
+            } else {
+                header.classList.remove('hide');
+            }
+            lastScrollY = currentScrollY;
+        });
+    }
+});
