@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const mobileMenuBtn = document.getElementById('mobileMenuBtn');
     const mobileNav = document.getElementById('mobileNav');
 
-    // КАЛЬКУЛЯТОР
+    // Калькулятор
     const staffRange = document.getElementById('staffRange');
     const staffValue = document.getElementById('staffValue');
     const pentestNeed = document.getElementById('pentestNeed');
@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function() {
     if (pentestNeed) pentestNeed.addEventListener('change', updatePrice);
     if (typeof updatePrice === 'function') updatePrice();
 
-    // ФУНКЦИЯ УСПЕХА
+    // Успех
     function showSuccessModal() {
         if (successModal) successModal.style.display = 'flex';
     }
@@ -44,13 +44,13 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     if (closeSuccessBtn) closeSuccessBtn.onclick = closeSuccessModal;
 
-    // ЗАКРЫТИЕ ПО ФОНУ
+    // Закрытие по фону
     window.onclick = function(event) {
         if (event.target === successModal) closeSuccessModal();
         if (event.target === modal) modal.style.display = 'none';
     };
 
-    // ОТКРЫТИЕ МОДАЛКИ
+    // Открытие модалки
     openModalBtns.forEach(btn => {
         btn.onclick = function(e) {
             e.preventDefault();
@@ -61,12 +61,12 @@ document.addEventListener('DOMContentLoaded', function() {
         if (modal) modal.style.display = 'none';
     };
 
-    // ВАЛИДАЦИЯ ТЕЛЕФОНА
+    // Валидация телефона
     function isValidPhone(phone) {
         return phone.trim().length >= 10;
     }
 
-    // ГЛАВНАЯ ФОРМА
+    // Главная форма
     if (mainForm) {
         mainForm.onsubmit = function(e) {
             e.preventDefault();
@@ -79,7 +79,7 @@ document.addEventListener('DOMContentLoaded', function() {
         };
     }
 
-    // МОДАЛЬНАЯ ФОРМА
+    // Модальная форма
     if (modalForm) {
         modalForm.onsubmit = function(e) {
             e.preventDefault();
@@ -93,14 +93,14 @@ document.addEventListener('DOMContentLoaded', function() {
         };
     }
 
-    // ПЛАВНЫЙ СКРОЛЛ
+    // Плавный скролл
     if (learnMoreBtn && servicesSection) {
         learnMoreBtn.onclick = function() {
             servicesSection.scrollIntoView({ behavior: 'smooth' });
         };
     }
 
-    // МОБИЛЬНОЕ МЕНЮ
+    // Мобильное меню
     if (mobileMenuBtn && mobileNav) {
         mobileMenuBtn.onclick = function() {
             const isOpen = mobileNav.style.display === 'flex';
@@ -108,7 +108,7 @@ document.addEventListener('DOMContentLoaded', function() {
         };
     }
 
-    // FAQ АККОРДЕОН
+    // FAQ аккордеон
     const faqItems = document.querySelectorAll('.faq-item');
     faqItems.forEach(function(item) {
         const question = item.querySelector('.faq-question');
@@ -119,7 +119,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // ===== СКРЫТИЕ ШАПКИ ПРИ СКРОЛЛЕ =====
+    // Скрытие шапки при скролле
     const header = document.getElementById('header');
     let lastScrollY = window.scrollY;
     

@@ -44,22 +44,7 @@
 </header>
 
 <main>
-    <!-- БЕГУЩАЯ СТРОКА С ОТЗЫВАМИ -->
-    <div class="ticker">
-        <div class="ticker__wrapper">
-            <div class="ticker__item">⭐ "Лучшая защита от DDoS — профессионализм" — ГК «Астра»</div>
-            <div class="ticker__item">🔥 "После аудита исправили 15 критических уязвимостей" — МФК «Займер»</div>
-            <div class="ticker__item">🚀 "Реагирование на инцидент — 10 минут, спасибо!" — ООО «ТехноСервис»</div>
-            <div class="ticker__item">💎 "Лицензия ФСТЭК подтверждена, работаем 2 года" — АО «Челябинский завод»</div>
-            <!-- дублируем для бесконечности -->
-            <div class="ticker__item">⭐ "Лучшая защита от DDoS — профессионализм" — ГК «Астра»</div>
-            <div class="ticker__item">🔥 "После аудита исправили 15 критических уязвимостей" — МФК «Займер»</div>
-            <div class="ticker__item">🚀 "Реагирование на инцидент — 10 минут, спасибо!" — ООО «ТехноСервис»</div>
-            <div class="ticker__item">💎 "Лицензия ФСТЭК подтверждена, работаем 2 года" — АО «Челябинский завод»</div>
-        </div>
-    </div>
-
-    <!-- HERO СЕКЦИЯ — ЧЁТКОЕ УТП + АНИМИРОВАННАЯ ГРАФИКА -->
+    <!-- HERO СЕКЦИЯ с анимированным щитом -->
     <section class="hero">
         <div class="container">
             <div class="hero__grid">
@@ -82,7 +67,6 @@
                     </div>
                 </div>
                 <div class="hero__image">
-                    <!-- Анимированная графика вместо статичной картинки -->
                     <div class="animated-shield">
                         <div class="shield-ring"></div>
                         <i class="fas fa-shield-virus shield-icon"></i>
@@ -107,7 +91,7 @@
         </div>
     </section>
 
-    <!-- УСЛУГИ С H2 -->
+    <!-- УСЛУГИ -->
     <section class="services" id="services">
         <div class="container">
             <h2 class="section-title">Услуги кибербезопасности</h2>
@@ -121,7 +105,7 @@
         </div>
     </section>
 
-    <!-- КЕЙСЫ (2-3 реальных примера) -->
+    <!-- КЕЙСЫ -->
     <section class="cases" id="cases">
         <div class="container">
             <h2 class="section-title">Реальные кейсы</h2>
@@ -149,10 +133,28 @@
         </div>
     </section>
 
-    <!-- ОТЗЫВЫ (стационарный блок) -->
+    <!-- ОТЗЫВЫ С БЕГУЩЕЙ СТРОКОЙ -->
     <section class="reviews" id="reviews">
         <div class="container">
             <h2 class="section-title">Отзывы клиентов</h2>
+            <p class="section-subtitle">Что говорят о нас</p>
+            <!-- Бегущая строка с отзывами -->
+            <div class="reviews-ticker">
+                <div class="reviews-ticker__wrapper">
+                    <div class="review-slide">⭐ «Провели пентест за 3 дня — нашли уязвимости, о которых мы не знали. Очень профессионально!» — Александр, IT-директор</div>
+                    <div class="review-slide">🔥 «После внедрения мониторинга 24/7 вздохнули спокойно. Атаки блокируются автоматически.» — Елена, финтех</div>
+                    <div class="review-slide">🚀 «Отличный аудит соответствия 152-ФЗ. Без штрафов прошли проверку.» — Дмитрий, госсектор</div>
+                    <div class="review-slide">💎 «Срочно потребовалась защита от DDoS — подключили за час. Спасибо команде!» — Олег, e‑com</div>
+                    <div class="review-slide">📈 «Повысили безопасность на 95% после наших рекомендаций. Довольны результатом.» — Марина, производство</div>
+                    <div class="review-slide">🏆 «Лучшая цена/качество на рынке. Работаем уже второй год.» — Сергей, логистика</div>
+                    <!-- дублируем для плавности -->
+                    <div class="review-slide">⭐ «Провели пентест за 3 дня — нашли уязвимости, о которых мы не знали. Очень профессионально!» — Александр, IT-директор</div>
+                    <div class="review-slide">🔥 «После внедрения мониторинга 24/7 вздохнули спокойно. Атаки блокируются автоматически.» — Елена, финтех</div>
+                    <div class="review-slide">🚀 «Отличный аудит соответствия 152-ФЗ. Без штрафов прошли проверку.» — Дмитрий, госсектор</div>
+                    <div class="review-slide">💎 «Срочно потребовалась защита от DDoS — подключили за час. Спасибо команде!» — Олег, e‑com</div>
+                </div>
+            </div>
+            <!-- Дополнительно статичные карточки отзывов (опционально) -->
             <div class="reviews__grid">
                 <div class="review-card">
                     <i class="fas fa-quote-left"></i>
@@ -168,7 +170,7 @@
         </div>
     </section>
 
-    <!-- КАЛЬКУЛЯТОР СТОИМОСТИ -->
+    <!-- КАЛЬКУЛЯТОР -->
     <section class="calculator" id="calculator">
         <div class="container">
             <h2 class="section-title">Калькулятор защиты</h2>
@@ -196,7 +198,7 @@
         </div>
     </section>
 
-    <!-- ФОРМА (МИНИМУМ ПОЛЕЙ) -->
+    <!-- ФОРМА -->
     <section class="contact-form-section" id="contacts">
         <div class="container">
             <h2 class="section-title">Получить консультацию</h2>
@@ -210,7 +212,7 @@
         </div>
     </section>
 
-    <!-- FAQ (SEO-блок) -->
+    <!-- FAQ -->
     <section class="faq" id="faq">
         <div class="container">
             <h2 class="section-title">Часто задаваемые вопросы</h2>
@@ -267,7 +269,7 @@
     </div>
 </footer>
 
-<!-- МОДАЛКА (короткая форма) -->
+<!-- МОДАЛКА -->
 <div id="modal" class="modal">
     <div class="modal__content">
         <span class="modal__close">&times;</span>
