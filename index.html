@@ -30,7 +30,6 @@
             <button class="btn-outline" id="openModalBtn">Заказать звонок</button>
             <button class="mobile-menu-btn" id="mobileMenuBtn"><i class="fas fa-bars"></i></button>
         </div>
-        <!-- Мобильное меню -->
         <div class="mobile-nav" id="mobileNav">
             <a href="#">Главная</a>
             <a href="#services">Услуги</a>
@@ -44,7 +43,7 @@
 </header>
 
 <main>
-    <!-- HERO СЕКЦИЯ с анимированным щитом -->
+    <!-- Hero с анимированным щитом -->
     <section class="hero">
         <div class="container">
             <div class="hero__grid">
@@ -77,7 +76,7 @@
         </div>
     </section>
 
-    <!-- КЛИЕНТЫ / ДОВЕРИЕ -->
+    <!-- Клиенты -->
     <section class="clients">
         <div class="container">
             <p class="clients__title">Нам доверяют</p>
@@ -91,7 +90,7 @@
         </div>
     </section>
 
-    <!-- УСЛУГИ -->
+    <!-- Услуги -->
     <section class="services" id="services">
         <div class="container">
             <h2 class="section-title">Услуги кибербезопасности</h2>
@@ -105,7 +104,7 @@
         </div>
     </section>
 
-    <!-- КЕЙСЫ -->
+    <!-- Кейсы -->
     <section class="cases" id="cases">
         <div class="container">
             <h2 class="section-title">Реальные кейсы</h2>
@@ -133,28 +132,32 @@
         </div>
     </section>
 
-    <!-- ОТЗЫВЫ С БЕГУЩЕЙ СТРОКОЙ -->
+    <!-- ОТЗЫВЫ С БЕГУЩЕЙ СТРОКОЙ (исправлено) -->
     <section class="reviews" id="reviews">
         <div class="container">
             <h2 class="section-title">Отзывы клиентов</h2>
             <p class="section-subtitle">Что говорят о нас</p>
-            <!-- Бегущая строка с отзывами -->
+            
             <div class="reviews-ticker">
-                <div class="reviews-ticker__wrapper">
+                <div class="reviews-ticker__track">
+                    <!-- Первый набор отзывов -->
                     <div class="review-slide">⭐ «Провели пентест за 3 дня — нашли уязвимости, о которых мы не знали. Очень профессионально!» — Александр, IT-директор</div>
                     <div class="review-slide">🔥 «После внедрения мониторинга 24/7 вздохнули спокойно. Атаки блокируются автоматически.» — Елена, финтех</div>
                     <div class="review-slide">🚀 «Отличный аудит соответствия 152-ФЗ. Без штрафов прошли проверку.» — Дмитрий, госсектор</div>
                     <div class="review-slide">💎 «Срочно потребовалась защита от DDoS — подключили за час. Спасибо команде!» — Олег, e‑com</div>
                     <div class="review-slide">📈 «Повысили безопасность на 95% после наших рекомендаций. Довольны результатом.» — Марина, производство</div>
                     <div class="review-slide">🏆 «Лучшая цена/качество на рынке. Работаем уже второй год.» — Сергей, логистика</div>
-                    <!-- дублируем для плавности -->
+                    <!-- Дублируем тот же набор для бесконечного эффекта -->
                     <div class="review-slide">⭐ «Провели пентест за 3 дня — нашли уязвимости, о которых мы не знали. Очень профессионально!» — Александр, IT-директор</div>
                     <div class="review-slide">🔥 «После внедрения мониторинга 24/7 вздохнули спокойно. Атаки блокируются автоматически.» — Елена, финтех</div>
                     <div class="review-slide">🚀 «Отличный аудит соответствия 152-ФЗ. Без штрафов прошли проверку.» — Дмитрий, госсектор</div>
                     <div class="review-slide">💎 «Срочно потребовалась защита от DDoS — подключили за час. Спасибо команде!» — Олег, e‑com</div>
+                    <div class="review-slide">📈 «Повысили безопасность на 95% после наших рекомендаций. Довольны результатом.» — Марина, производство</div>
+                    <div class="review-slide">🏆 «Лучшая цена/качество на рынке. Работаем уже второй год.» — Сергей, логистика</div>
                 </div>
             </div>
-            <!-- Дополнительно статичные карточки отзывов (опционально) -->
+
+            <!-- Статичные карточки отзывов -->
             <div class="reviews__grid">
                 <div class="review-card">
                     <i class="fas fa-quote-left"></i>
@@ -170,7 +173,7 @@
         </div>
     </section>
 
-    <!-- КАЛЬКУЛЯТОР -->
+    <!-- Калькулятор -->
     <section class="calculator" id="calculator">
         <div class="container">
             <h2 class="section-title">Калькулятор защиты</h2>
@@ -198,7 +201,7 @@
         </div>
     </section>
 
-    <!-- ФОРМА -->
+    <!-- Форма -->
     <section class="contact-form-section" id="contacts">
         <div class="container">
             <h2 class="section-title">Получить консультацию</h2>
@@ -238,7 +241,7 @@
     </section>
 </main>
 
-<footer class="footer" id="footer">
+<footer class="footer">
     <div class="container">
         <div class="footer__grid">
             <div class="footer__info">
@@ -269,7 +272,7 @@
     </div>
 </footer>
 
-<!-- МОДАЛКА -->
+<!-- Модалка -->
 <div id="modal" class="modal">
     <div class="modal__content">
         <span class="modal__close">&times;</span>
@@ -283,7 +286,7 @@
     </div>
 </div>
 
-<!-- ОКНО УСПЕХА -->
+<!-- Окно успеха -->
 <div id="successModal" class="success-modal">
     <div class="success-modal__content">
         <div class="success-icon"><i class="fas fa-check-circle"></i></div>

@@ -86,6 +86,7 @@ h3 {
     width: 100%;
 }
 
+/* Header со скрытием при скролле */
 .header {
     position: sticky;
     top: 0;
@@ -162,6 +163,7 @@ h3 {
     font-size: 1.2rem;
 }
 
+/* Hero */
 .hero {
     padding: 60px 0 80px;
 }
@@ -265,6 +267,7 @@ h3 {
     100% { transform: scale(1.2); opacity: 0; }
 }
 
+/* Клиенты */
 .clients {
     padding: 40px 0;
     background: #0f1117;
@@ -291,6 +294,7 @@ h3 {
     opacity: 0.7;
 }
 
+/* Услуги и кейсы */
 .services, .cases, .calculator, .faq {
     padding: 80px 0;
 }
@@ -330,7 +334,7 @@ h3 {
     display: inline-block;
 }
 
-/* Отзывы с бегущей строкой */
+/* Отзывы и бегущая строка (ИСПРАВЛЕНО) */
 .reviews {
     padding: 80px 0;
     background: #0f1117;
@@ -344,29 +348,48 @@ h3 {
     border-radius: 20px;
     padding: 20px 0;
     border: 1px solid rgba(79, 70, 229, 0.3);
+    position: relative;
 }
 
-.reviews-ticker__wrapper {
+.reviews-ticker__track {
     display: flex;
-    white-space: nowrap;
-    animation: tickerReviews 30s linear infinite;
+    gap: 30px;
+    width: max-content;
+    animation: scrollReviews 40s linear infinite;
+    padding: 0 15px;
 }
 
 .review-slide {
-    display: inline-block;
-    padding: 0 30px;
-    font-size: 1rem;
-    color: #cbd5e1;
-    white-space: normal;
-    width: 380px;
     flex-shrink: 0;
-    text-align: center;
-    border-right: 1px solid #4f46e5;
+    width: 380px;
+    background: rgba(79, 70, 229, 0.1);
+    padding: 16px 20px;
+    border-radius: 20px;
+    font-size: 0.95rem;
+    color: #eef2ff;
+    text-align: left;
+    border-left: 3px solid #8b5cf6;
 }
 
-@keyframes tickerReviews {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-50%); }
+@keyframes scrollReviews {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* Адаптация для мобильных */
+@media (max-width: 768px) {
+    .review-slide {
+        width: 280px;
+        font-size: 0.85rem;
+    }
+    .reviews-ticker__track {
+        gap: 15px;
+        animation-duration: 30s;
+    }
 }
 
 .reviews__grid {
@@ -434,6 +457,7 @@ h3 {
     text-align: center;
 }
 
+/* Форма */
 .contact-form-section {
     padding: 80px 0;
     background: #0f1117;
@@ -465,6 +489,7 @@ h3 {
     margin-top: 16px;
 }
 
+/* FAQ */
 .faq__list {
     max-width: 800px;
     margin: 0 auto;
@@ -497,6 +522,7 @@ h3 {
     display: block;
 }
 
+/* Footer */
 .footer {
     background: #080a0f;
     padding: 48px 0 24px;
@@ -538,6 +564,7 @@ h3 {
     text-decoration: none;
 }
 
+/* Модалки */
 .modal, .success-modal {
     display: none;
     position: fixed;
@@ -575,6 +602,7 @@ h3 {
     margin-bottom: 16px;
 }
 
+/* Адаптивность общая */
 @media (max-width: 900px) {
     .hero__grid, .footer__grid {
         grid-template-columns: 1fr;
@@ -604,11 +632,6 @@ h3 {
     }
     .services__grid, .cases__grid {
         grid-template-columns: 1fr;
-    }
-    .review-slide {
-        width: 280px;
-        font-size: 0.85rem;
-        padding: 0 15px;
     }
 }
 
